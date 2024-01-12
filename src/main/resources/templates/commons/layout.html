@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+	xmlns:layout="https://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!-- 共通ヘッダー -->
+	<header>
+		<div align="center">
+			<h1>共通ヘッダー</h1>
+		</div>
+		<hr/>
+	</header>
+	
+	<!-- 置き換え場所 -->
+	<div layout:fragment="content" align="center">
+		作成するページhtmlにフラグメント識別子のcontentを指定することで、layoutを適応したページに
+		表示したいページの特定部分をここと置き換える
+	</div>
+	
+	<!-- 共通フッター -->
+	<footer>
+		<hr/>
+		<div align="center">
+			<h1>共有フッター</h1>
+		</div>
+	</footer>
+</body>
+</html>
